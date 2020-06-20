@@ -1,0 +1,66 @@
+header {
+  width: 100%;
+  height: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  @include flex;
+
+  .hero-text {
+    width: 50%;
+    h1 {
+      font-size: 3rem;
+      background: linear-gradient(to right, $secondary-color, $accent-color);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: $accent-color;
+    }
+
+    button {
+      margin-top: 20px;
+      @include button;
+      transition: all 500ms ease-out;
+
+      &:hover {
+        background: none;
+        border: 2px solid $accent-color;
+        color: $accent-color;
+      }
+    }
+  }
+
+  .hero-img {
+    width: 50%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    width: 100%;
+
+    .hero-text {
+      width: 48%;
+
+      h1 {
+        font-size: 1.9rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+      button {
+        @include buttonMd;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+}

@@ -1,0 +1,18 @@
+@import 'config';
+@import 'nav';
+@import 'header';
+@import 'showcase';
+@import 'footer';
+@import 'services';
+@import 'leftNav';
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
