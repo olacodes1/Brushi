@@ -1,18 +1,96 @@
-@import 'config';
-@import 'nav';
-@import 'header';
-@import 'showcase';
-@import 'footer';
-@import 'services';
-@import 'leftNav';
+@import "partials/config";
+@import "partials/header";
+@import "partials/product";
+@import "partials/testimony";
+@import "partials/footer";
+@import "partials/animation";
+@import "partials/_breakpoint_tablet";
 
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-html{
   scroll-behavior: smooth;
 }
 
+body {
+  font-family: "Lato", sans-serif;
+  position: relative;
+  // margin: 10px;
+  background-color: #ececec;
+}
+
+// Navigation Style
+.nav {
+  margin: 10px;
+  position: relative;
+}
+
+// Menu Style
+.menu {
+  width: 30px;
+  height: 30px;
+  margin-top: 2px;
+  position: absolute;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 100%;
+
+  .fa-bars {
+    font-size: 17px;
+  }
+}
+
+// Menu Style Ends
+
+nav {
+  margin-bottom: 20px;
+  width: 100%;
+
+  .logo {
+    display: block;
+
+    h1 {
+      font-weight: bold;
+      font-family: "Poppins", sans-serif;
+
+      span {
+        color: #ec0936;
+      }
+    }
+  }
+
+  .navlinks {
+    position: absolute;
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+    text-align: center;
+
+    li {
+      padding: 5px;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+
+      &:hover {
+        color: white;
+        background-color: crimson;
+      }
+    }
+  }
+}
+
+// For Nav Links Showing Up
+.navlinks.active {
+  display: block;
+}
+// Navigation Style Ends

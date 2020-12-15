@@ -1,0 +1,40 @@
+.coming-soon {
+  height: auto;
+  width: 100%;
+  margin: 20px 0;
+
+  .coming-soon-img {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .coming-soon-text {
+    padding: 20px;
+    h1 {
+      font-size: 22px;
+    }
+
+    p {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      margin: 15px 0;
+      color: #333;
+    }
+
+    button {
+      width: 120px;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      height: 35px;
+      //   padding: 0 10px;
+      border-radius: 5px;
+      background-color: crimson;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

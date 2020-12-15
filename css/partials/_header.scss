@@ -1,0 +1,53 @@
+// Header Style
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  margin-bottom: 20px;
+
+  // Header Image
+  .hero-img {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 50%;
+    }
+  }
+
+  // Header Content
+  .hero-text {
+    order: 2;
+    h1 {
+      font-weight: bold;
+      font-size: 22px;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #333;
+      font-family: "Poppins", sans-serif;
+    }
+
+    button {
+      width: 100px;
+      height: 35px;
+      border-radius: 5px;
+      border: 2px solid crimson;
+      font-weight: bold;
+      margin-top: 10px;
+      color: crimson;
+      background: transparent;
+
+      &:hover {
+        background-color: crimson;
+        color: #fff;
+        transition: 0.3s ease-out;
+      }
+    }
+  }
+}
