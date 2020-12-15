@@ -12,9 +12,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 40px 10px;
 }
 
 header .hero-img {
@@ -47,12 +45,14 @@ header .hero-text h1 {
   font-weight: bold;
   font-size: 22px;
   margin-bottom: 5px;
+  margin-top: 20px;
 }
 
 header .hero-text p {
   font-size: 14px;
   color: #333;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 5px;
   font-family: "Poppins", sans-serif;
 }
 
